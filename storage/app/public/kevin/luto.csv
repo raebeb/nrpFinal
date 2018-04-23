@@ -1,0 +1,3 @@
+DIAS_LIBRES_POR_FALLECIMIENTO_DE_FAMILIAR
+# FuncionarioID, Dia inicial (0 si inicio se da en mes anterior), Dia termino (0 si termino se da en mes posterior)
+123568974;01;28

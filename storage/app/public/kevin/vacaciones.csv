@@ -1,0 +1,5 @@
+DIAS_DE_VACACIONES_POR_FUNCIONARIO
+# FuncionarioID, Dia inicial (0 si inicio se da en mes anterior), Dia termino (0 si termino se da en mes posterior)
+193197884;01;28
+193197884;01;28
+193197886;14;14

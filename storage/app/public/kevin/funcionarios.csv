@@ -1,0 +1,15 @@
+sep=;
+# Esto es un comentario. Comentarios comienzan con # 
+# Dias de la semana = LUN, MAR, MIE, JUE, VIE, SAB, o DOM 
+
+LISTADO_DE_ENFERMERAS
+# FuncionarioID, Nombre, Apellido, Dias de la semana que trabaja (0 no trabajo, 1 si trabaja. Orden: lunes a domingo), Tipo de turno (Solo turno x, cualquier turno 0), Prioridad
+ID;Nombre;Apellido;LUN;MAR;MIE;JUE;VIE;SAB;DOM;Turno
+193197884;Byron;Oyarzún;1;1;1;1;1;1;1;0;5
+193197884;Whynot;ToLife;0;1;1;1;1;1;1;0;5
+111111111;Jhon;Doe;1;1;1;1;1;1;1;0;5
+123568974;Salt;Bae;1;1;1;1;1;1;1;0;5
+123456584;Francisca;Osores;1;1;1;1;1;1;1;0;5
+112568956;Francisca;Osores;1;1;1;1;1;1;1;0;5
+112568956;Francisca;Osores;1;1;1;1;1;1;1;0;5
+193197886;Byron;Oyarzun;1;1;1;1;1;1;1;0;5

@@ -1,0 +1,12 @@
+sep=;
+EmpleadoID;Nombre;Apellido
+666;Arabela;Henriquez
+
+# HORARIO INDIVIDUAL: Dia[Turno]
+LUN;MAR;MIE;JUE;VIE;SAB;DOM
+
+# Horario Semana 1
+
+;;1;
+ID;NOMBRE;DOM;
+666;Arabela;LIBRE

@@ -1,0 +1,12 @@
+sep=;
+EmpleadoID;Nombre;Apellido
+555;Gabbi;Hernandez
+
+# HORARIO INDIVIDUAL: Dia[Turno]
+LUN;MAR;MIE;JUE;VIE;SAB;DOM
+
+# Horario Semana 1
+
+;;1;
+ID;NOMBRE;DOM;
+555;Gabbi;LIBRE

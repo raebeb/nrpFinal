@@ -1,0 +1,28 @@
+# Esto es un comentario. Comentarios comienzan con #
+# Dia de la semana = LUN, MAR, MIE, JUE, VIE, SAB, o DOM
+Pais=CHILE
+CANTIDAD MAXIMA DE HORAS POR DIA=12
+CANTIDAD MAXIMA DE HORAS POR SEMANA=48
+
+TIPOS_DE_TURNOS
+# TurnoID, Nombre del Turno, Duracion en horas, Cantidad maxima consecutiva.
+1,LARGO,12,2
+2,NOCHE,12,1
+3,DIA,8,5
+
+TURNOS_ANTERIORES_INVALIDOS
+# TurnoID, TurnoID(s) que no puede(n) anteceder a este (sepados por coma).
+1,3,2
+2,3
+3,1,2
+
+COMBINACIONES_VALIDAS_DE_TURNOS
+# TurnoID(nuevo), TurnoID separados por comas (0 es libre) para determinar combinaciones validas de los mismos.
+4,1,2,0,0
+5,1,2,0
+
+REQUISITOS_DE_TURNOS_POR_DIA
+# TurnoID, Cantidad de funcionarios requeridos por dia de la semana (orden: lunes a domingo).
+1,3,3,3,3,3,3,3
+2,3,3,3,3,3,3,3
+3,1,1,1,1,1,0,0

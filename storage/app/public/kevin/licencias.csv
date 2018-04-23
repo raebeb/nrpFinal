@@ -1,0 +1,5 @@
+DIAS_LIBRES_POR_RAZONES_MEDICAS
+# FuncionarioID, Dia inicial (0 si inicio se da en mes anterior), Dia termino (0 si termino se da en mes posterior)
+123456584;01;28
+112568956;01;28
+112568956;01;28

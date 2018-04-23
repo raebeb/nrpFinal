@@ -1,0 +1,12 @@
+sep=;
+EmpleadoID;Nombre;Apellido
+444;Esme;Pavarotti
+
+# HORARIO INDIVIDUAL: Dia[Turno]
+LUN;MAR;MIE;JUE;VIE;SAB;DOM
+
+# Horario Semana 1
+
+;;1;
+ID;NOMBRE;DOM;
+444;Esme;LIBRE

@@ -1,0 +1,37 @@
+# Esto es un comentario. Comentarios comienzan con #
+# Bajo cada mes, se ingresa los días feriados en el mes correspondiente (incluyendo domingos), separados por coma.
+
+ENERO
+1,16
+
+FEBRERO
+
+MARZO
+30,31
+
+ABRIL
+1
+
+MAYO
+1,21
+
+JUNIO
+7
+
+JULIO
+2,16
+
+AGOSTO
+15
+
+SEPTIEMBRE
+17,18,19
+
+OCTUBRE
+15
+
+NOVIEMBRE
+1,2
+
+DICIEMBRE
+8,25

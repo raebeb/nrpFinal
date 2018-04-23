@@ -1,0 +1,12 @@
+sep=;
+EmpleadoID;Nombre;Apellido
+222;Arabela;Gutierrez
+
+# HORARIO INDIVIDUAL: Dia[Turno]
+LUN;MAR;MIE;JUE;VIE;SAB;DOM
+
+# Horario Semana 6
+
+;;30;
+ID;NOMBRE;
+222;Arabela

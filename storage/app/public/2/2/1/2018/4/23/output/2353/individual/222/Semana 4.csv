@@ -1,0 +1,12 @@
+sep=;
+EmpleadoID;Nombre;Apellido
+222;Arabela;Gutierrez
+
+# HORARIO INDIVIDUAL: Dia[Turno]
+LUN;MAR;MIE;JUE;VIE;SAB;DOM
+
+# Horario Semana 4
+
+;;16;17;18;19;20;21;22;
+ID;NOMBRE;LUN;MAR;MIE;JUE;VIE;SAB;DOM;
+222;Arabela;LIBRE;LARGO;NOCHE;LIBRE;LIBRE;LARGO;NOCHE

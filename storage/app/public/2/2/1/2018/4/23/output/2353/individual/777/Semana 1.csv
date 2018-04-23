@@ -1,0 +1,12 @@
+sep=;
+EmpleadoID;Nombre;Apellido
+777;Joana;Kowalsky
+
+# HORARIO INDIVIDUAL: Dia[Turno]
+LUN;MAR;MIE;JUE;VIE;SAB;DOM
+
+# Horario Semana 1
+
+;;1;
+ID;NOMBRE;DOM;
+777;Joana;LIBRE

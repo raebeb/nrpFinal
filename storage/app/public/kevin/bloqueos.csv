@@ -1,0 +1,2 @@
+PERIODO_DE_BLOQUEO_DE_FUNCIONARIO
+# FuncionarioID, Dia inicial (0 si inicio se da en mes anterior), Dia termino (0 si termino se da en mes posterior)

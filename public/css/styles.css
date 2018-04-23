@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
+      url(../fonts/MaterialIcons-Regular.woff) format('woff'),
+      url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, .login-panel, .card-header {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-panel {
+    height: 100%;
+}
+
+.background{
+    background-color: #2a80ef;
+}
+
+.background-home{
+    background-color: #eeeded;
+}
+
+.card {
+    border-radius: .286rem;
+    box-shadow: 0 2px 20px 1px rgba(0,0,0,.15);
+}
+
+.card-header {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dropdown-item {
+    color: #000 !important;
+}
+
+.login-profile {
+    color: #808080;
+    font-size: 128px;
+}
+
+.login-input {
+    font-size: 21px;
+}
+
+.navbar-text {
+    list-style-type: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+
+.menu-icon {
+    font-size: 21px;
+}
+
+.bg-navbar{
+    background-color: #2a80ef;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-panel{
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content-panel > .box {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#navbarDropdown {
+    padding-left: 0px;
+}
+
+.invalid-feedback{
+  display: inherit;
+}
+
+/* TEST */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#wrap {
+    flex: 1;
+}
+
+#footer {
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+#content-inside{
+    margin-bottom: 20px;
+}
+
+th, td{
+    white-space: nowrap;
+}

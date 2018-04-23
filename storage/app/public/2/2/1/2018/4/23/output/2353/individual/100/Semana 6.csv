@@ -1,0 +1,12 @@
+sep=;
+EmpleadoID;Nombre;Apellido
+100;Arabela;Quetzalcoatl
+
+# HORARIO INDIVIDUAL: Dia[Turno]
+LUN;MAR;MIE;JUE;VIE;SAB;DOM
+
+# Horario Semana 6
+
+;;30;
+ID;NOMBRE;
+100;Arabela

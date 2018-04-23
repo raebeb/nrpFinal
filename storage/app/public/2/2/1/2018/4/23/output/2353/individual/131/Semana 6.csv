@@ -1,0 +1,12 @@
+sep=;
+EmpleadoID;Nombre;Apellido
+131;Kitty;Yrizabal
+
+# HORARIO INDIVIDUAL: Dia[Turno]
+LUN;MAR;MIE;JUE;VIE;SAB;DOM
+
+# Horario Semana 6
+
+;;30;
+ID;NOMBRE;
+131;Kitty
