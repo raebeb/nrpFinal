@@ -23,7 +23,7 @@
                               <td>{{ $file->name_receiver }}</td>
                               <td>{{ $file->lastname_receiver }}</td>
                               <td>{{ $file->receiver}}</td>
-                              <td><a href="/storage{{$file->storage_path}}"><i class="material-icons menu-icon align-text-bottom">file_download</i>{{ $file->file_name }}</a></td>
+                              <td><a href="/storage/{{$file->storage_path}}"><i class="material-icons menu-icon align-text-bottom">file_download</i>{{ $file->file_name }}</a></td>
                           </tr>
                         @endforeach
                       </tbody>

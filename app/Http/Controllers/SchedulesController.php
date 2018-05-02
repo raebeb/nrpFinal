@@ -58,19 +58,14 @@ class SchedulesController extends Controller
         $dateH = date("H");
         $datei = date("i");
         $dates = date("s");
-        $root_path = "/var/www/html/production/nrp/storage/app/";
+        $root_path = base_path()."/storage/app/";
 
        $file = $request->file('file');
        $name = $dateH."_".$datei."_".$dates.'_'.$file->getClientOriginalName();
        $default_storage = 'public/'.auth()->user()->hospital->country->id.'/'.auth()->user()->hospital->id.'/'.'1'.'/'.date("Y").'/'.date("n").'/'.date("j"); // verificar 1
        $input = Storage::putFileAs($default_storage.'/input', $file, $name);
 
-
-       //test 
         $something = event(new CsvWasReceived($root_path.$input, $request));
-       //$something = event(new CsvWasReceived('/wamp64/www/nrpV4/storage/app/'.$input, $request));
-        //dd("hecho");
-        //end test
 
        //Step 2
        $message = system('cd '.$root_path.'public && ./scheduler settings '.$root_path.$input.' feriados', $return);
@@ -105,7 +100,7 @@ class SchedulesController extends Controller
                $fileBD->local_path = $data[4+$next];
                $fileBD->file_io = 1;
                $fileBD->period = 'null';
-               $fileBD->storage_path = substr($data[4+$next],36);
+               $fileBD->storage_path = substr($data[4+$next],strlen($root_path.'public/'));
                $fileBD->save();
                $next = $next+2;
              }
@@ -133,7 +128,7 @@ class SchedulesController extends Controller
                }else{
                  $fileBD->period = 'Semanal';
                }
-               $fileBD->storage_path = substr($data[1],36);
+               $fileBD->storage_path = substr($data[1],strlen($root_path.'public/'));
                $fileBD->save();
              }
              fclose($general);

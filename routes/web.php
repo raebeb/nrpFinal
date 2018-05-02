@@ -36,6 +36,7 @@ Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm
 Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
 //Download
+/*
 Route::get('storage/{pais}/{hospital}/{servicio}/{anyo}/{mes}/{dia}/{io}/{fileInput?}/{hora?}/{file_responsable?}/{individual?}/{person?}/{file_receiver?}', function ($pais, $hospital, $servicio, $anyo, $mes, $dia, $io, $fileInput = null , $hora = null, $file_responsable = null, $individual = null) {
      if ($io === 'input') {
        $url = storage_path().'/app/public/'.$pais.'/'.$hospital.'/'.$servicio.'/'.$anyo.'/'.$mes.'/'.$dia.'/'.$io.'/'.$fileInput;
@@ -55,3 +56,4 @@ Route::get('storage/{pais}/{hospital}/{servicio}/{anyo}/{mes}/{dia}/{io}/{fileIn
      //si no se encuentra lanzamos un error 404.
      abort(404);
 });
+*/
