@@ -28,41 +28,50 @@ class StorageCsv
     for($i = 0; $i < sizeof($event->request->input('ID')) ; $i++){
         fwrite($respuestas,$event->request->input('ID')[$i].";".$event->request->input('name')[$i].";".$event->request->input('lastname')[$i].";");
 
-        if ($event->request->input('lunes')[$i] !== null && $event->request->input('lunes')[$i] == '1') //revisar
-           { fwrite($respuestas, '1' . ';');}
-        else
-             {fwrite($respuestas, '0' . ';');}
+        $lunes = $event->request->input('checkbox-lunes-'.$event->request->input('ID')[$i]);
+        $martes = $event->request->input('checkbox-martes-'.$event->request->input('ID')[$i]);
+        $miercoles = $event->request->input('checkbox-miercoles-'.$event->request->input('ID')[$i]);
+        $jueves = $event->request->input('checkbox-jueves-'.$event->request->input('ID')[$i]);
+        $viernes = $event->request->input('checkbox-viernes-'.$event->request->input('ID')[$i]);
+        $sabado = $event->request->input('checkbox-sabado-'.$event->request->input('ID')[$i]);
+        $domingo = $event->request->input('checkbox-domingo-'.$event->request->input('ID')[$i]);
 
-        if ($event->request->input('martes')[$i] !== null && $event->request->input('martes')[$i] == '1') //revisar
-            {fwrite($respuestas, '1' . ';');}
-        else
-            {fwrite($respuestas, '0' . ';');}   
-            
-        if ($event->request->input('miercoles')[$i] !== null && $event->request->input('miercoles')[$i] == '1') //revisar
-            {fwrite($respuestas, '1' . ';');}
-        else
-            {fwrite($respuestas, '0' . ';');}
+        if( isset($lunes)){
+            fwrite($respuestas, '1' . ';');
+        }else{
+            fwrite($respuestas, '0' . ';');
+        }
 
-        if ($event->request->input('jueves')[$i] !== null && $event->request->input('jueves')[$i] == '1') //revisar
-            {fwrite($respuestas, '1' . ';');}
-        else
-            {fwrite($respuestas, '0' . ';');}
-        
-        if ($event->request->input('viernes')[$i] !== null && $event->request->input('viernes')[$i] == '1') //revisar
-            {fwrite($respuestas, '1' . ';');}
-        else
-            {fwrite($respuestas, '0' . ';');}
-
-        if ($event->request->input('sabado')[$i] !== null && $event->request->input('sabado')[$i] == '1') //revisar
-            {fwrite($respuestas, '1' . ';');}
-        else
-           { fwrite($respuestas, '0' . ';');}   
-        
-        if ($event->request->input('domingo')[$i] !== null && $event->request->input('domingo')[$i] = '1') //revisar
-            {fwrite($respuestas, '1' . ';');}
-        else
-           { fwrite($respuestas, '0' . ';');}
-
+        if( isset($martes)){
+            fwrite($respuestas, '1' . ';');
+        }else{
+            fwrite($respuestas, '0' . ';');
+        }
+        if( isset($miercoles)){
+            fwrite($respuestas, '1' . ';');
+        }else{
+            fwrite($respuestas, '0' . ';');
+        }
+        if( isset($jueves)){
+            fwrite($respuestas, '1' . ';');
+        }else{
+            fwrite($respuestas, '0' . ';');
+        }
+        if( isset($viernes)){
+            fwrite($respuestas, '1' . ';');
+        }else{
+            fwrite($respuestas, '0' . ';');
+        }
+        if( isset($sabado)){
+            fwrite($respuestas, '1' . ';');
+        }else{
+            fwrite($respuestas, '0' . ';');
+        }
+        if( isset($domingo)){
+            fwrite($respuestas, '1' . ';');
+        }else{
+            fwrite($respuestas, '0' . ';');
+        }
                 fwrite($respuestas,$event->request->input('turno_preferido')[$i].";");
 
                 fwrite($respuestas,$event->request->input('prioriedad')[$i]."\n");
@@ -124,5 +133,6 @@ if($event->request->has('ID_Bloqueo'))
     }
     }
 }
+
 
 
